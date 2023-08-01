@@ -1,0 +1,59 @@
+/* Showroom */
+
+#showroom-section{
+    text-align: center;
+}
+#showroom-section h2{
+    font-size: 3rem;
+    margin: 3rem 0 3rem 0;
+}
+#showroom-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.site-div{
+    width: 30%;
+}
+.sites{
+    margin: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+.sites:hover{
+    transform: scale(1.2);
+}
+
+.detail{ display: none}
+
+.link{ display: none}
+
+.site-div:target{
+    position: fixed;
+    top: 25%;
+    padding: 10rem;
+}
+.site-div:target .detail{
+    display: block;
+    padding-top: 1rem;
+}
+.site-div:target .link{
+    display: block;
+    padding-top: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.site-div:target .detail a{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.site-div:target  .bg-blur{
+    z-index: -1;
+    position: absolute;
+    top: -50%;
+    left: -70%;
+    width: 200vw;
+    height: 200vh;
+    background-color: #000000cc;
+}
